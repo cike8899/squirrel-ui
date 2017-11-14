@@ -1,9 +1,7 @@
-import  {Component} from  'react'
+import * as React from 'react';
 
-export default class Dialog extends Component<any>{
-  render(){
-      return <div>
-          dialog
-      </div>
+export default class Dialog extends React.Component<any> {
+  render() {
+    return <div>dialog</div>;
   }
 }
