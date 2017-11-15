@@ -20,6 +20,6 @@ storiesOf('Button', module)
     <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
   ));
 
-storiesOf('dialog', module).add('base', () => {
+storiesOf('Dialog', module).add('base', () => {
   return <Dialog onClick={action('dialog')} />;
 });

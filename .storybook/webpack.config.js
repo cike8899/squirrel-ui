@@ -31,6 +31,11 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         include: [paths.appSrc, paths.appPackages],
         loader: require.resolve('ts-loader')
+      },
+      {
+        test: /\.scss$/,
+        include: [paths.appSrc, paths.appPackages],
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   }
