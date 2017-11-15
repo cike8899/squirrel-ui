@@ -21,5 +21,8 @@ storiesOf('Button', module)
   ));
 
 storiesOf('Dialog', module).add('base', () => {
-  return <Dialog onClick={action('dialog')} />;
+  return <Dialog onClick={action('dialog')} >
+    <div className="title">title</div>
+    <div className="body">body</div>
+  </Dialog>;
 });
