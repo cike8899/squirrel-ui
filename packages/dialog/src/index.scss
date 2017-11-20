@@ -1,5 +1,34 @@
 $color: red;
-
-.dialog-wrapper{
-    border: 1px solid gainsboro
+$prefix: squirrel-dialog;
+// .dialog-wrapper {
+//     border: 1px solid gainsboro
+// }
+.#{$prefix} {
+    &-wrapper {}
+    &-mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: gray;
+        opacity: 0.6;
+    }
+    &-pane {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 20%;
+        margin-top: 10%;
+        text-align: center;
+        background: white;
+    }
+    &-header {}
+    &-body {}
+    &-footer {}
 }
